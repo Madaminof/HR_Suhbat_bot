@@ -6,7 +6,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 
-TOKEN = "7596138177:AAEZ8UN_B0O7syKo7LPjC1m2o2JwxxmW45E"
+TOKEN = "7122100254:AAGS52LrgNYmHa3UE5sARnMPacKvAXhepD4"
 HR_CHANNEL_ID = "@qwertybot01"
 
 bot = Bot(token=TOKEN)
