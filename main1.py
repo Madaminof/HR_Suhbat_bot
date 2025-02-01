@@ -7,7 +7,10 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 
 TOKEN = "7122100254:AAGS52LrgNYmHa3UE5sARnMPacKvAXhepD4"
-HR_CHANNEL_ID = "@qwertybot01"
+HR_CHANNEL_ID = "@+ygOSbFNsYFoxNTFi"
+
+
+
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
