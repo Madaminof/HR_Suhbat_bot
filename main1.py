@@ -60,13 +60,6 @@ def marital_status_keyboard():
     return ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True, one_time_keyboard=True)
 
 
-def salary_keyboard():
-    buttons = [
-        [KeyboardButton(text="3 mln"), KeyboardButton(text="4 mln"), KeyboardButton(text="5 mln")]
-    ]
-    return ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True, one_time_keyboard=True)
-
-
 def phone_keyboard():
     buttons = [[KeyboardButton(text="📞 Telefon raqamni yuborish", request_contact=True)]]
     return ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True, one_time_keyboard=True)
@@ -114,18 +107,17 @@ async def process_experience(message: types.Message, state: FSMContext):
     await message.answer("Oilaviy holatingiz qanday?", reply_markup=marital_status_keyboard())
     await state.set_state(ResumeForm.marital_status)
 
-
 @dp.message(ResumeForm.marital_status)
 async def process_marital_status(message: types.Message, state: FSMContext):
     await state.update_data(marital_status=message.text)
-    await message.answer("💵 Qancha oylik maosh olishni istaysiz? (so‘m)", reply_markup=salary_keyboard())
+    await message.answer("💵 Qancha oylik maosh olishni istaysiz? (so‘mda yozing, masalan: 5000000)")
     await state.set_state(ResumeForm.salary_expectation)
 
 
 @dp.message(ResumeForm.salary_expectation)
 async def process_salary(message: types.Message, state: FSMContext):
     await state.update_data(salary_expectation=message.text)
-    await message.answer("📱  telefon raqamingizni kiriting\n(masalan: +998XXXXXXXXX)", reply_markup=phone_keyboard())
+    await message.answer("📱 Telefon raqamingizni kiriting\n(masalan: +998XXXXXXXXX)", reply_markup=phone_keyboard())
     await state.set_state(ResumeForm.phone_number)
 
 
