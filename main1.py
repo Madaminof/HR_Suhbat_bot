@@ -6,8 +6,8 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 
-TOKEN = "7122100254:AAGS52LrgNYmHa3UE5sARnMPacKvAXhepD4"
-HR_CHANNEL_ID = "@t00_1000"
+TOKEN = "7755544055:AAE3olrSnAh8iTEoxPQqYE6mVHsssh7-HQI"
+HR_CHANNEL_ID = "@human_resource_hr"
 
 
 
