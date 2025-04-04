@@ -1,3 +1,0 @@
- ssh hrbot_hr@ssh-hrbot.alwaysdata.net
-tmux new -s bot_session
-control+b,control+d
