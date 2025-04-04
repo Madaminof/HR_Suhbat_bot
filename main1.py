@@ -8,7 +8,7 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 from flask import Flask
 
-TOKEN = "7755544055:AAE3olrSnAh8iTEoxPQqYE6mVHsssh7-HQI"
+TOKEN = "7676842246:AAFnHgTkNdsTBGe81gp1uObBoIgicq8eefY"
 HR_CHANNEL_ID = "@human_resource_hr"
 
 bot = Bot(token=TOKEN)
@@ -168,7 +168,12 @@ async def process_photo(message: types.Message, state: FSMContext):
         f"👤 Ism: {user_data['full_name']}\n"
         f"🎂 Yosh: {user_data['age']}\n"
         f"⚥ Jinsi: {user_data['gender']}\n"
+        f"🎓 Studentmisiz: {user_data['student_status']}\n"
         f"📍 Yashash joyi: {user_data['location']}\n"
+        f"🏢 Ish tajribasi: {user_data['work_experience']}\n"
+        f"💍 Oilaviy holat: {user_data['marital_status']}\n"
+        f"💰 Maosh talabi: {user_data['salary_expectation']} so‘m\n"
+        f"📱 Telefon: +{user_data['phone_number']}\n"
         f"📞 Telegram: @{message.from_user.username or 'No username'}\n"
     )
 
