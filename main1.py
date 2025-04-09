@@ -9,7 +9,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemo
 from flask import Flask
 
 # 🔐 TOKEN va CHANNEL_ID to'g'ridan-to'g'ri
-TOKEN = "7949948928:AAEneWduqNL-nWKBuLHhCgM_GNLrRDSGYQk"
+TOKEN = "8064440412:AAFOtHqpC5hb13nPC7VUF2e2pbWQogf3eiQ"
 HR_CHANNEL_ID = "@human_resource_hr"
 
 # Bot va Flask sozlash
